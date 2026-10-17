@@ -37,7 +37,6 @@ export const IntroSplash: React.FC<IntroSplashProps> = ({ onComplete, onExitStar
         center: 130,
         ringRadius: 88,
         textRadius: 108,
-        glowSize: 240,
         logoHeight: 96,
       }
     : {
@@ -45,7 +44,6 @@ export const IntroSplash: React.FC<IntroSplashProps> = ({ onComplete, onExitStar
         center: 160,
         ringRadius: 110,
         textRadius: 135,
-        glowSize: 320,
         logoHeight: 120,
       };
 
@@ -184,7 +182,8 @@ export const IntroSplash: React.FC<IntroSplashProps> = ({ onComplete, onExitStar
       role="dialog"
       aria-modal="true"
       aria-label="Center of Talent Development intro"
-      className="fixed inset-0 z-[9999] pointer-events-auto flex items-center justify-center select-none"
+      style={{ backgroundColor: isExiting ? 'transparent' : '#000000' }}
+      className="fixed inset-0 z-[9999] pointer-events-auto flex items-center justify-center select-none bg-[#000000]"
     >
       {/* 
         Background Layer with Circular Reveal Mask:
@@ -217,33 +216,12 @@ export const IntroSplash: React.FC<IntroSplashProps> = ({ onComplete, onExitStar
 
       {/* Main Centered Stage */}
       <div className="relative flex flex-col items-center justify-center pointer-events-none z-10">
-        {/* Glow & Emblem Container */}
+        {/* Emblem & Ring Container (pure black, zero glow) */}
         <div
           className="relative flex items-center justify-center"
           style={{ width: dimensions.svgSize, height: dimensions.svgSize }}
         >
-          {/* 1. Glow: Soft radial gradient behind logo, gold color at ~18% opacity */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{
-              opacity: isExiting ? 0 : showLogo ? 1 : 0,
-              scale: isExiting ? 0.8 : showLogo ? 1 : 0.8,
-            }}
-            transition={{
-              duration: isExiting ? 0.2 : 0.6,
-              ease: [0.2, 0, 0, 1],
-            }}
-            className="absolute rounded-full pointer-events-none"
-            style={{
-              width: dimensions.glowSize,
-              height: dimensions.glowSize,
-              background: 'radial-gradient(circle, rgba(212, 143, 48, 0.22) 0%, rgba(212, 143, 48, 0.10) 45%, transparent 70%)',
-              filter: 'blur(16px)',
-            }}
-            aria-hidden="true"
-          />
-
-          {/* 2 & 3. SVG Layer: Gold Ring & Orbiting Text */}
+          {/* SVG Layer: Gold Ring & Orbiting Text */}
           <svg
             className="absolute inset-0 pointer-events-none overflow-visible"
             width={dimensions.svgSize}
