@@ -4,9 +4,10 @@ import { Menu, X } from 'lucide-react';
 
 interface NavbarProps {
   onOpenRegister: () => void;
+  isNavLogoHidden?: boolean;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
+export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister, isNavLogoHidden = false }) => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -83,9 +84,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
           className="flex items-center gap-3.5 group focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#DA5662] rounded-lg py-1 px-1 min-h-[48px]"
         >
           <img
+            id="nav-cotd-logo"
             src="/assets/logos/cotd-logo.png"
-            alt="Centre of Talent Development"
-            className="h-[28px] sm:h-8 w-auto object-contain shrink-0"
+            alt="Center of Talent Development"
+            className={`h-[28px] sm:h-8 w-auto object-contain shrink-0 transition-opacity duration-150 ${
+              isNavLogoHidden ? 'opacity-0' : 'opacity-100'
+            }`}
           />
           <span className="h-5 w-px bg-[#E8EAED]" aria-hidden="true" />
           <div className="flex items-baseline gap-1.5">
@@ -153,7 +157,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
               <div className="flex items-center gap-3">
                 <img
                   src="/assets/logos/cotd-logo.png"
-                  alt="Centre of Talent Development"
+                  alt="Center of Talent Development"
                   className="h-8 w-auto object-contain shrink-0"
                 />
                 <span className="h-5 w-px bg-[#E8EAED]" aria-hidden="true" />

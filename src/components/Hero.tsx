@@ -148,10 +148,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister }) => {
             <div className="mt-3 flex items-center gap-3 text-[14px] text-[#5F6368] font-normal">
               <img
                 src="/assets/logos/cotd-logo.png"
-                alt="Centre of Talent Development"
+                alt="Center of Talent Development"
                 className="h-[24px] w-auto object-contain shrink-0"
               />
-              <span>Presented by the Centre of Talent Development, Woxsen University</span>
+              <span>Presented by the Center of Talent Development, Woxsen University</span>
             </div>
           </div>
 

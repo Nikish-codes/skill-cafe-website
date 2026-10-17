@@ -13,9 +13,20 @@ import { RegistrationCTA } from './components/RegistrationCTA';
 import { Footer } from './components/Footer';
 import { RegistrationModal } from './components/RegistrationModal';
 import { StickyRegisterBar } from './components/StickyRegisterBar';
+import { IntroSplash } from './components/IntroSplash';
 
 export const App: React.FC = () => {
   const [isRegisterOpen, setIsRegisterOpen] = useState(false);
+
+  // Splash screen state: show once per session, bypass if prefers-reduced-motion
+  const [showSplash, setShowSplash] = useState(() => {
+    if (typeof window === 'undefined') return false;
+    const hasSeen = sessionStorage.getItem('cotd-intro-seen') === 'true';
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    return !hasSeen && !prefersReducedMotion;
+  });
+
+  const [isNavLogoHidden, setIsNavLogoHidden] = useState(() => showSplash);
 
   useEffect(() => {
     // Disable automatic browser scroll restoration on refresh
@@ -43,10 +54,18 @@ export const App: React.FC = () => {
     }
   };
 
+  const handleSplashComplete = () => {
+    setIsNavLogoHidden(false);
+    setShowSplash(false);
+  };
+
   return (
     <div className="min-h-screen bg-white text-black selection:bg-[#DA5662]/15 selection:text-black font-sans">
+      {/* COTD Intro Splash Screen */}
+      {showSplash && <IntroSplash onComplete={handleSplashComplete} />}
+
       {/* Sticky Navigation */}
-      <Navbar onOpenRegister={handleOpenRegister} />
+      <Navbar onOpenRegister={handleOpenRegister} isNavLogoHidden={isNavLogoHidden} />
 
       {/* Main Content Flow:
           Hero → Overview → How it works → Outcomes → Archives → Partners → Event details → FAQ → Registration form → Final CTA → Footer

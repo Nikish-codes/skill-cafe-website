@@ -1,6 +1,6 @@
 # Skill Café 3.0
 
-The official website for **Skill Café 3.0** — an interdisciplinary challenge presented by the Centre of Talent Development (COTD) at Woxsen University, in collaboration with Google and the Ideate Club.
+The official website for **Skill Café 3.0** — an interdisciplinary challenge presented by the Center of Talent Development (COTD) at Woxsen University, in collaboration with Google and the Ideate Club.
 
 ## Tech Stack
 - **Framework:** React 18 + TypeScript + Vite

@@ -34,7 +34,7 @@ export const Outcomes: React.FC = () => {
                 {idx === 0 && (
                   <img
                     src="/assets/logos/cotd-logo.png"
-                    alt="Centre of Talent Development logo"
+                    alt="Center of Talent Development logo"
                     className="w-7 h-7 object-contain"
                   />
                 )}

@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
                 Skill Café 3.0
               </div>
               <div className="text-[14px] text-[#5F6368]">
-                Organised by the Centre of Talent Development (COTD)
+                Organised by the Center of Talent Development (COTD)
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@ export const Footer: React.FC = () => {
         <div className="pt-8 pb-4 flex items-center justify-center lg:justify-start gap-6">
           <img
             src="/assets/logos/cotd-logo.png"
-            alt="Centre of Talent Development"
+            alt="Center of Talent Development"
             className="h-10 w-auto object-contain shrink-0"
           />
           <span className="h-6 w-px bg-[#E8EAED]" aria-hidden="true" />
@@ -74,7 +74,7 @@ export const Footer: React.FC = () => {
 
         {/* Copyright */}
         <div className="pt-2 text-[14px] text-[#5F6368] text-center lg:text-left">
-          © {new Date().getFullYear()} Centre of Talent Development, Woxsen University. All rights reserved.
+          © {new Date().getFullYear()} Center of Talent Development, Woxsen University. All rights reserved.
         </div>
       </div>
     </footer>

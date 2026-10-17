@@ -17,7 +17,7 @@ export const Ecosystem: React.FC = () => {
           </h2>
 
           <p className="mt-4 lg:mt-6 text-[16px] text-[#5F6368] leading-[1.6]">
-            Organised by the Centre of Talent Development, with support from Google and Ideate Club.
+            Organised by the Center of Talent Development, with support from Google and Ideate Club.
           </p>
         </div>
 
@@ -28,7 +28,7 @@ export const Ecosystem: React.FC = () => {
             <div className="h-14 flex items-center mb-6">
               <img
                 src={PARTNERS_LIST[0].logo!}
-                alt="Centre of Talent Development"
+                alt="Center of Talent Development"
                 className="h-12 w-auto object-contain"
               />
             </div>

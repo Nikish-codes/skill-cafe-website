@@ -16,7 +16,7 @@ export const EVENT_DETAILS = {
   date: 'Tuesday, 6 Oct 2026',
   time: '3:00 PM IST (reporting 2:30 PM)',
   venue: 'Lecture Theater 1 (LT1), Woxsen University, Hyderabad',
-  organizer: 'Centre of Talent Development (COTD)',
+  organizer: 'Center of Talent Development (COTD)',
   admission: 'Free · Open to all enrolled Woxsen students',
   metaLine: 'Tue, 6 Oct 2026 · 3:00 PM IST · LT1, Woxsen University, Hyderabad',
 };
@@ -48,7 +48,7 @@ export const OUTCOME_CARDS = [
   {
     index: '01',
     title: 'Certificate of Merit',
-    description: 'Official recognition from the Centre of Talent Development, Woxsen University.',
+    description: 'Official recognition from the Center of Talent Development, Woxsen University.',
   },
   {
     index: '02',
@@ -70,8 +70,8 @@ export const OUTCOME_CARDS = [
 export const PARTNERS_LIST = [
   {
     role: 'Main Organiser',
-    name: 'Centre of Talent Development (COTD)',
-    description: "Woxsen's Centre of Talent Development, organiser of Skill Café.",
+    name: 'Center of Talent Development (COTD)',
+    description: "Woxsen's Center of Talent Development, organiser of Skill Café.",
     logo: '/assets/logos/cotd-logo.png',
   },
   {
