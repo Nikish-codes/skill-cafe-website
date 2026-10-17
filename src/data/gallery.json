@@ -1,0 +1,122 @@
+[
+  {
+    "id": "img-01",
+    "src": "/assets/gallery/gallery-01.jpg",
+    "width": 1600,
+    "height": 900,
+    "title": "Brainstorming at the table",
+    "edition": "Skill Café 2.0"
+  },
+  {
+    "id": "img-02",
+    "src": "/assets/gallery/gallery-02.jpg",
+    "width": 1600,
+    "height": 900,
+    "title": "Opening keynote",
+    "edition": "Skill Café 1.0"
+  },
+  {
+    "id": "img-03",
+    "src": "/assets/gallery/gallery-03.jpg",
+    "width": 1600,
+    "height": 900,
+    "title": "Building the prototype",
+    "edition": "Skill Café 2.0"
+  },
+  {
+    "id": "img-04",
+    "src": "/assets/gallery/gallery-04.jpg",
+    "width": 1600,
+    "height": 900,
+    "title": "Pitching to the deans",
+    "edition": "Skill Café 2.0"
+  },
+  {
+    "id": "img-05",
+    "src": "/assets/gallery/gallery-05.jpg",
+    "width": 1600,
+    "height": 900,
+    "title": "Teams across schools",
+    "edition": "Skill Café 1.0"
+  },
+  {
+    "id": "img-06",
+    "src": "/assets/gallery/gallery-06.jpg",
+    "width": 1600,
+    "height": 900,
+    "title": "Mentors with the teams",
+    "edition": "Skill Café 2.0"
+  },
+  {
+    "id": "img-07",
+    "src": "/assets/gallery/gallery-07.jpg",
+    "width": 1600,
+    "height": 900,
+    "title": "Inside LT1",
+    "edition": "Skill Café 1.0"
+  },
+  {
+    "id": "img-08",
+    "src": "/assets/gallery/gallery-08.jpg",
+    "width": 1600,
+    "height": 900,
+    "title": "Refining the demo",
+    "edition": "Skill Café 2.0"
+  },
+  {
+    "id": "img-09",
+    "src": "/assets/gallery/gallery-09.jpg",
+    "width": 1600,
+    "height": 900,
+    "title": "Celebrating the winners",
+    "edition": "Skill Café 1.0"
+  },
+  {
+    "id": "img-10",
+    "src": "/assets/gallery/gallery-10.jpg",
+    "width": 1600,
+    "height": 900,
+    "title": "The 2.0 cohort",
+    "edition": "Skill Café 2.0"
+  },
+  {
+    "id": "img-11",
+    "src": "/assets/gallery/gallery-11.jpg",
+    "width": 1600,
+    "height": 900,
+    "title": "Heads down, building",
+    "edition": "Skill Café 2.0"
+  },
+  {
+    "id": "img-12",
+    "src": "/assets/gallery/gallery-12.jpg",
+    "width": 1600,
+    "height": 900,
+    "title": "Design huddle",
+    "edition": "Skill Café 1.0"
+  },
+  {
+    "id": "img-13",
+    "src": "/assets/gallery/gallery-13.jpg",
+    "width": 1600,
+    "height": 900,
+    "title": "On stage",
+    "edition": "Skill Café 2.0"
+  },
+  {
+    "id": "img-14",
+    "src": "/assets/gallery/gallery-14.jpg",
+    "width": 1600,
+    "height": 900,
+    "title": "Certificates of Merit",
+    "edition": "Skill Café 1.0"
+  },
+  {
+    "id": "img-15",
+    "src": "/assets/gallery/gallery-15.jpg",
+    "width": 1600,
+    "height": 900,
+    "title": "The collaborative spirit",
+    "edition": "Skill Café 2.0"
+  }
+]
