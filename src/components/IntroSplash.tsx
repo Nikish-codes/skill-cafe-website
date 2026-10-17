@@ -120,12 +120,6 @@ export const IntroSplash: React.FC<IntroSplashProps> = ({ onComplete, onExitStar
       duration: 0.7,
       ease: exitEase,
       onComplete: () => {
-        // Mark session as seen
-        try {
-          sessionStorage.setItem('cotd-intro-seen', 'true');
-        } catch {
-          // ignore session storage access errors
-        }
         onComplete();
       },
     });

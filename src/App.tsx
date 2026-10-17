@@ -18,12 +18,11 @@ import { IntroSplash } from './components/IntroSplash';
 export const App: React.FC = () => {
   const [isRegisterOpen, setIsRegisterOpen] = useState(false);
 
-  // Splash screen state: show once per session, bypass if prefers-reduced-motion
+  // Splash loading screen: runs on every page load/reload (bypassed only if user prefers reduced motion)
   const [showSplash, setShowSplash] = useState(() => {
     if (typeof window === 'undefined') return false;
-    const hasSeen = sessionStorage.getItem('cotd-intro-seen') === 'true';
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    return !hasSeen && !prefersReducedMotion;
+    return !prefersReducedMotion;
   });
 
   const [isNavLogoHidden, setIsNavLogoHidden] = useState(() => showSplash);
